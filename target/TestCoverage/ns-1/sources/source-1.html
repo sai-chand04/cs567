@@ -1,0 +1,417 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > SimpleJavaApp</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.example</a>
+</div>
+
+<h1>Coverage Summary for Class: SimpleJavaApp (com.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SimpleJavaApp</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (62/62)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (22/22)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (155/155)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.example;
+&nbsp;import java.util.*;
+&nbsp;import java.util.InputMismatchException;
+&nbsp;import java.lang.Math;
+&nbsp;
+&nbsp;import static java.lang.Math.*;
+&nbsp;
+&nbsp;class SimpleJavaApp {
+&nbsp;    private final Scanner scanner;
+&nbsp;
+&nbsp;    // Constructor to initialize the scanner
+<b class="fc">&nbsp;    public SimpleJavaApp(Scanner scanner) {</b>
+<b class="fc">&nbsp;        this.scanner = scanner;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public static void main(String[] args) {
+<b class="fc">&nbsp;        Scanner scanner = new Scanner(System.in);</b>
+<b class="fc">&nbsp;        SimpleJavaApp app = new SimpleJavaApp(scanner);</b>
+&nbsp;
+&nbsp;        // Call the calculator functions
+<b class="fc">&nbsp;        app.basicOperations();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void basicOperations() {
+<b class="fc">&nbsp;        System.out.println(&quot;===== Basic Operations =====&quot;);</b>
+<b class="fc">&nbsp;        System.out.print(&quot;Enter the first number: &quot;);</b>
+<b class="fc">&nbsp;        int num1 = getIntegerInput(&quot;&quot;);</b>
+<b class="fc">&nbsp;        System.out.print(&quot;Enter the second number: &quot;);</b>
+<b class="fc">&nbsp;        int num2 = getIntegerInput(&quot;&quot;);</b>
+&nbsp;
+<b class="fc">&nbsp;        System.out.println(&quot;Addition: &quot; + add(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Subtraction: &quot; + subtract(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Multiplication: &quot; + multiply(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Division: &quot; + divide(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Modulus: &quot; + modulus(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Exponentiation: &quot; + exponentiate(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Square Root of first number: &quot; + sqrt(num1));</b>
+&nbsp;
+&nbsp;        // Extra functions
+<b class="fc">&nbsp;        System.out.println(&quot;Factorial of first number: &quot; + factorial(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Power of first number raised to second number: &quot; + Math.pow(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Logarithm (base 10) of first number: &quot; + Math.log10(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Sine of first number: &quot; + sine(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Cosine of first number: &quot; + cosine(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Tangent of first number: &quot; + tangent(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Convert first number from degrees to radians: &quot; + toRadians(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Convert first number from radians to degrees: &quot; + toDegrees(num1));</b>
+&nbsp;
+&nbsp;        // Additional methods
+<b class="fc">&nbsp;        System.out.println(&quot;Natural Logarithm of first number: &quot; + logBaseE(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Round off first number to nearest integer: &quot; + roundOff(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Ceiling of first number: &quot; + ceilValue(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Floor of first number: &quot; + floorValue(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Cube root of first number: &quot; + cubeRoot(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Random number between 1 and 100: &quot; + randomInRange(1, 100));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Max of first and second numbers: &quot; + maxOfTwo(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Min of first and second numbers: &quot; + minOfTwo(num1, num2));</b>
+&nbsp;
+&nbsp;        // Financial operations
+<b class="fc">&nbsp;        System.out.println(&quot;Simple Interest on first number at 5% for 1 year: &quot; + simpleInterest(num1, 5, 1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Compound Interest on first number at 5% for 1 year: &quot; + compoundInterest(num1, 5, 1));</b>
+&nbsp;
+&nbsp;        // Hyperbolic functions
+<b class="fc">&nbsp;        System.out.println(&quot;Hyperbolic Sine of first number: &quot; + sinh(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Hyperbolic Cosine of first number: &quot; + cosh(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Hyperbolic Tangent of first number: &quot; + tanh(num1));</b>
+&nbsp;
+&nbsp;        // Logarithm base 2
+<b class="fc">&nbsp;        System.out.println(&quot;Logarithm base 2 of first number: &quot; + logarithmBase2(num1));</b>
+&nbsp;
+&nbsp;        // Unit conversions
+<b class="fc">&nbsp;        System.out.println(&quot;Convert first number from meters to kilometers: &quot; + metersToKilometers(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Convert first number from kilograms to pounds: &quot; + kilogramsToPounds(num1));</b>
+&nbsp;
+&nbsp;        // Additional methods
+<b class="fc">&nbsp;        System.out.println(&quot;Area of Circle with radius first number: &quot; + areaOfCircle(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Area of Rectangle with length and width: &quot; + areaOfRectangle(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Area of Triangle with base and height: &quot; + areaOfTriangle(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Volume of Sphere with radius: &quot; + volumeOfSphere(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Volume of Cylinder with radius and height: &quot; + volumeOfCylinder(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Volume of Cone with radius and height: &quot; + volumeOfCone(num1, num2));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Perimeter of Circle with radius: &quot; + perimeterOfCircle(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Perimeter of Rectangle with length and width: &quot; + perimeterOfRectangle(num1, num2));</b>
+&nbsp;
+&nbsp;        // Financial calculations
+<b class="fc">&nbsp;        System.out.println(&quot;Monthly Loan Payment for principal, rate, months: &quot; + monthlyLoanPayment(num1, 5, 12));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Future Value of Investment: &quot; + futureValueOfInvestment(num1, 5, 1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Net Present Value of Cash Flows: &quot; + netPresentValue(new double[]{1000, 1200, 1300}, 5));</b>
+&nbsp;
+&nbsp;        // Temperature conversions
+<b class="fc">&nbsp;        System.out.println(&quot;Celsius to Fahrenheit: &quot; + celsiusToFahrenheit(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Fahrenheit to Celsius: &quot; + fahrenheitToCelsius(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Celsius to Kelvin: &quot; + celsiusToKelvin(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Kelvin to Celsius: &quot; + kelvinToCelsius(num1));</b>
+&nbsp;
+&nbsp;        // Distance conversions
+<b class="fc">&nbsp;        System.out.println(&quot;Kilometers to Miles: &quot; + kilometersToMiles(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Miles to Kilometers: &quot; + milesToKilometers(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Inches to Centimeters: &quot; + inchesToCentimeters(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Centimeters to Inches: &quot; + centimetersToInches(num1));</b>
+&nbsp;
+&nbsp;        // Weight conversions
+<b class="fc">&nbsp;        System.out.println(&quot;Pounds to Kilograms: &quot; + poundsToKilograms(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Kilograms to Grams: &quot; + kilogramsToGrams(num1));</b>
+&nbsp;
+&nbsp;        // Speed conversions
+<b class="fc">&nbsp;        System.out.println(&quot;Kmph to Mph: &quot; + kmphToMph(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Mph to Kmph: &quot; + mphToKmph(num1));</b>
+&nbsp;
+&nbsp;        // Time conversions
+<b class="fc">&nbsp;        System.out.println(&quot;Hours to Minutes: &quot; + hoursToMinutes(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Minutes to Hours: &quot; + minutesToHours(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Days to Hours: &quot; + daysToHours(num1));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Hours to Days: &quot; + hoursToDays(num1));</b>
+&nbsp;
+&nbsp;        // Modular Arithmetic
+<b class="fc">&nbsp;        System.out.println(&quot;Power Modulo: &quot; + powerModulo(2, 3, 5));</b>
+&nbsp;
+&nbsp;        // Statistics
+<b class="fc">&nbsp;        System.out.println(&quot;Mean of numbers: &quot; + mean(new int[]{1, 2, 3, 4, 5}));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Variance of numbers: &quot; + variance(new int[]{1, 2, 3, 4, 5}));</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Standard Deviation of numbers: &quot; + standardDeviation(new int[]{1, 2, 3, 4, 5}));</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public int getIntegerInput(String message) {
+&nbsp;        while (true) {
+&nbsp;            try {
+<b class="fc">&nbsp;                System.out.print(message);</b>
+<b class="fc">&nbsp;                return scanner.nextInt();</b>
+&nbsp;            } catch (InputMismatchException e) {
+<b class="fc">&nbsp;                System.out.println(&quot;Invalid input. Please enter an integer.&quot;);</b>
+<b class="fc">&nbsp;                scanner.next(); // Clear the invalid input</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    // Basic Operations
+<b class="fc">&nbsp;    public int add(int a, int b) { return a + b; }</b>
+<b class="fc">&nbsp;    public int subtract(int a, int b) { return a - b; }</b>
+<b class="fc">&nbsp;    public int multiply(int a, int b) { return a * b; }</b>
+<b class="fc">&nbsp;    public double divide(int a, int b) { return b == 0 ? 0 : (double) a / b; }</b>
+&nbsp;    public int modulus(int a, int b) {
+<b class="fc">&nbsp;        if (b == 0) {</b>
+<b class="fc">&nbsp;            throw new ArithmeticException(&quot;Division by zero is not allowed&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return a % b;</b>
+&nbsp;    }
+<b class="fc">&nbsp;    public double exponentiate(int a, int b) { return Math.pow(a, b); }</b>
+<b class="fc">&nbsp;    public double sqrt(int a) { return Math.sqrt(a); }</b>
+&nbsp;
+&nbsp;    // Advanced Operations
+<b class="fc">&nbsp;    public double logBaseE(int a) { return a &lt;= 0 ? -1 : Math.log(a); }</b>
+<b class="fc">&nbsp;    public double roundOff(int a) { return Math.round(a); }</b>
+<b class="fc">&nbsp;    public double ceilValue(int a) { return Math.ceil(a); }</b>
+<b class="fc">&nbsp;    public double floorValue(int a) { return Math.floor(a); }</b>
+<b class="fc">&nbsp;    public double cubeRoot(int a) { return Math.cbrt(a); }</b>
+&nbsp;    public int randomInRange(int min, int max) {
+<b class="fc">&nbsp;        return (int) (Math.random() * (max - min + 1)) + min;</b>
+&nbsp;    }
+&nbsp;
+<b class="fc">&nbsp;    public double maxOfTwo(int a, int b) { return Math.max(a, b); }</b>
+<b class="fc">&nbsp;    public double minOfTwo(int a, int b) { return Math.min(a, b); }</b>
+<b class="fc">&nbsp;    public double factorial(int a) { return a == 0 ? 1 : a * factorial(a - 1); }</b>
+&nbsp;
+&nbsp;    // Financial Functions
+&nbsp;    public double simpleInterest(double principal, double rate, double time) {
+<b class="fc">&nbsp;        double interest = principal * rate * time / 100;</b>
+<b class="fc">&nbsp;        return Math.round(interest * 100.0) / 100.0;  // Round to 2 decimal places</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public double compoundInterest(double principal, double rate, double time) {
+<b class="fc">&nbsp;        double interest = principal * Math.pow(1 + rate / 100, time) - principal;</b>
+<b class="fc">&nbsp;        return Math.round(interest * 100.0) / 100.0;  // Round to 2 decimal places</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // Trigonometric Functions
+&nbsp;    public double sine(int a) {
+<b class="fc">&nbsp;        return Math.round(Math.sin(Math.toRadians(a)) * 10.0) / 10.0;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public double cosine(int a) {
+<b class="fc">&nbsp;        return Math.round(Math.cos(Math.toRadians(a)) * 10.0) / 10.0;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public double tangent(int a) {
+<b class="fc">&nbsp;        return Math.round(Math.tan(Math.toRadians(a)) * 10.0) / 10.0;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+<b class="fc">&nbsp;    public double toRadians(int a) { return Math.toRadians(a); }</b>
+<b class="fc">&nbsp;    public double toDegrees(int a) { return Math.toDegrees(a); }</b>
+&nbsp;
+&nbsp;    // Area, Volume, and Perimeter Calculations
+<b class="fc">&nbsp;    public double areaOfCircle(double radius) { return Math.PI * Math.pow(radius, 2); }</b>
+<b class="fc">&nbsp;    public double areaOfRectangle(double length, double width) { return length * width; }</b>
+<b class="fc">&nbsp;    public double areaOfTriangle(double base, double height) { return 0.5 * base * height; }</b>
+<b class="fc">&nbsp;    public double volumeOfSphere(double radius) { return (4.0 / 3) * Math.PI * Math.pow(radius, 3); }</b>
+<b class="fc">&nbsp;    public double volumeOfCylinder(double radius, double height) { return Math.PI * Math.pow(radius, 2) * height; }</b>
+<b class="fc">&nbsp;    public double volumeOfCone(double radius, double height) { return (1.0 / 3) * Math.PI * Math.pow(radius, 2) * height; }</b>
+<b class="fc">&nbsp;    public double perimeterOfCircle(double radius) { return 2 * Math.PI * radius; }</b>
+&nbsp;    public double perimeterOfRectangle(double length, double width) {
+<b class="fc">&nbsp;        if (length &lt;= 0 || width &lt;= 0) {</b>
+<b class="fc">&nbsp;            throw new IllegalArgumentException(&quot;Length and width must be positive values.&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return 2 * (length + width);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    // Unit conversions
+<b class="fc">&nbsp;    public double metersToKilometers(double meters) { return meters / 1000; }</b>
+<b class="fc">&nbsp;    public double kilogramsToPounds(double kilograms) { return kilograms * 2.20462; }</b>
+&nbsp;
+&nbsp;    // Other conversion functions (Temperature, Distance, Weight, Speed)
+<b class="fc">&nbsp;    public double kilometersToMiles(double kilometers) { return kilometers * 0.621371; }</b>
+<b class="fc">&nbsp;    public double milesToKilometers(double miles) { return miles / 0.621371; }</b>
+<b class="fc">&nbsp;    public double inchesToCentimeters(double inches) { return inches * 2.54; }</b>
+&nbsp;    public double centimetersToInches(double centimeters) {
+<b class="fc">&nbsp;        return Math.round((centimeters / 2.54) * 100.0) / 100.0;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public double poundsToKilograms(double pounds) {
+<b class="fc">&nbsp;        return Math.round((pounds / 2.20462) * 100.0) / 100.0;</b>
+&nbsp;    }
+&nbsp;
+<b class="fc">&nbsp;    public double kilogramsToGrams(double kilograms) { return kilograms * 1000; }</b>
+&nbsp;
+<b class="fc">&nbsp;    public double celsiusToFahrenheit(double celsius) { return (celsius * 9 / 5) + 32; }</b>
+<b class="fc">&nbsp;    public double fahrenheitToCelsius(double fahrenheit) { return (fahrenheit - 32) * 5 / 9; }</b>
+<b class="fc">&nbsp;    public double celsiusToKelvin(double celsius) { return celsius + 273.15; }</b>
+<b class="fc">&nbsp;    public double kelvinToCelsius(double kelvin) { return kelvin - 273.15; }</b>
+<b class="fc">&nbsp;    public double kmphToMph(double kmph) { return kmph * 0.621371; }</b>
+&nbsp;    public double mphToKmph(double mph) {
+<b class="fc">&nbsp;        return Math.round((mph / 0.621371) * 100.0) / 100.0;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    // Modular Arithmetic
+<b class="fc">&nbsp;    public int powerModulo(int base, int exponent, int modulus) { return (int) Math.pow(base, exponent) % modulus; }</b>
+&nbsp;
+&nbsp;    // Statistical Functions
+<b class="fc">&nbsp;    public double mean(int[] values) { return sum(values) / values.length; }</b>
+&nbsp;    public double variance(int[] values) {
+<b class="fc">&nbsp;        double mean = mean(values);</b>
+<b class="fc">&nbsp;        double sumOfSquares = 0;</b>
+<b class="fc">&nbsp;        for (int value : values) {</b>
+<b class="fc">&nbsp;            sumOfSquares += Math.pow(value - mean, 2);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return sumOfSquares / values.length;</b>
+&nbsp;    }
+<b class="fc">&nbsp;    public double standardDeviation(int[] values) { return Math.sqrt(variance(values)); }</b>
+&nbsp;
+&nbsp;    public double sum(int[] values) {
+<b class="fc">&nbsp;        double sum = 0;</b>
+<b class="fc">&nbsp;        for (int value : values) {</b>
+<b class="fc">&nbsp;            sum += value;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return sum;</b>
+&nbsp;    }
+&nbsp;    public static double logarithmBase2(double num) {
+<b class="fc">&nbsp;        return Math.log(num) / Math.log(2);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public static double monthlyLoanPayment(double principal, double annualRate, int months) {
+<b class="fc">&nbsp;        if (principal == 0 || months == 0) {</b>
+<b class="fc">&nbsp;            return 0.0;</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        double monthlyRate = annualRate / 100 / 12; // Convert annual rate to monthly rate</b>
+<b class="fc">&nbsp;        double payment = (principal * monthlyRate * Math.pow(1 + monthlyRate, months)) /</b>
+<b class="fc">&nbsp;                (Math.pow(1 + monthlyRate, months) - 1);</b>
+&nbsp;
+<b class="fc">&nbsp;        return Math.round(payment * 100.0) / 100.0; // Round the result to 2 decimal places</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    public static double futureValueOfInvestment(double presentValue, double annualRate, int years) {
+<b class="fc">&nbsp;        return presentValue * Math.pow(1 + annualRate / 100, years);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public static double netPresentValue(double[] cashFlows, double discountRate) {
+<b class="fc">&nbsp;        double npv = 0;</b>
+<b class="fc">&nbsp;        for (int t = 0; t &lt; cashFlows.length; t++) {</b>
+<b class="fc">&nbsp;            npv += cashFlows[t] / Math.pow(1 + discountRate / 100, t);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return npv;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public static double hoursToMinutes(double hours) {
+<b class="fc">&nbsp;        return hours * 60;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public static double minutesToHours(double minutes) {
+<b class="fc">&nbsp;        return minutes / 60;</b>
+&nbsp;    }
+&nbsp;    public static double daysToHours(double days) {
+<b class="fc">&nbsp;        return days * 24;</b>
+&nbsp;    }
+&nbsp;    public static double hoursToDays(double hours) {
+<b class="fc">&nbsp;        return hours / 24;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-12-09 15:41</div>
+</div>
+</body>
+</html>

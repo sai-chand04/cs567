@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.SimpleJavaAppTest" time="3.197" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\91703\Desktop\cs567\target\test-classes;C:\Users\91703\Desktop\cs567\target\classes;C:\Users\91703\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\91703\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\91703\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\91703\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\91703\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\91703\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\91703\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\91703\.m2\repository\org\junit-pioneer\junit-pioneer\1.4.1\junit-pioneer-1.4.1.jar;C:\Users\91703\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.1\junit-jupiter-params-5.7.1.jar;C:\Users\91703\.m2\repository\org\slf4j\slf4j-api\2.0.0\slf4j-api-2.0.0.jar;C:\Users\91703\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\91703\.m2\repository\net\bytebuddy\byte-buddy\1.15.4\byte-buddy-1.15.4.jar;C:\Users\91703\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.4\byte-buddy-agent-1.15.4.jar;C:\Users\91703\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik\1.7.1\jqwik-1.7.1.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik-api\1.7.1\jqwik-api-1.7.1.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik-web\1.7.1\jqwik-web-1.7.1.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik-time\1.7.1\jqwik-time-1.7.1.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik-engine\1.7.1\jqwik-engine-1.7.1.jar;C:\Users\91703\.m2\repository\org\pitest\pitest-junit5-plugin\1.0.0\pitest-junit5-plugin-1.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\91703\AppData\Local\Temp\surefire15525581132815795914\surefirebooter6034886543568075262.jar C:\Users\91703\AppData\Local\Temp\surefire15525581132815795914 2024-12-09T15-40-00_719-jvmRun1 surefire13312530317947527516tmp surefire_03365623453357256613tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\91703\Desktop\cs567\target\test-classes;C:\Users\91703\Desktop\cs567\target\classes;C:\Users\91703\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\91703\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\91703\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\91703\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\91703\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\91703\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\91703\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\91703\.m2\repository\org\junit-pioneer\junit-pioneer\1.4.1\junit-pioneer-1.4.1.jar;C:\Users\91703\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.1\junit-jupiter-params-5.7.1.jar;C:\Users\91703\.m2\repository\org\slf4j\slf4j-api\2.0.0\slf4j-api-2.0.0.jar;C:\Users\91703\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\91703\.m2\repository\net\bytebuddy\byte-buddy\1.15.4\byte-buddy-1.15.4.jar;C:\Users\91703\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.4\byte-buddy-agent-1.15.4.jar;C:\Users\91703\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik\1.7.1\jqwik-1.7.1.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik-api\1.7.1\jqwik-api-1.7.1.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik-web\1.7.1\jqwik-web-1.7.1.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik-time\1.7.1\jqwik-time-1.7.1.jar;C:\Users\91703\.m2\repository\net\jqwik\jqwik-engine\1.7.1\jqwik-engine-1.7.1.jar;C:\Users\91703\.m2\repository\org\pitest\pitest-junit5-plugin\1.0.0\pitest-junit5-plugin-1.0.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\91703"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\91703\Desktop\cs567"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\91703\AppData\Local\Temp\surefire15525581132815795914\surefirebooter6034886543568075262.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.1+11-39"/>
+    <property name="user.name" value="Sai Chand"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\91703\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\91703\AppData\Local\Temp\"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="C:\Users\91703\Desktop\cs567"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet;C:\Program Files\dotnet\;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.9.9\bin;C:\Users\91703\Downloads\sonar-scanner-cli-6.2.0.4584-windows-x64\sonar-scanner-6.2.0.4584-windows-x64\bin;C:\Users\91703\Downloads\pmd-dist-7.5.0-bin\pmd-bin-7.5.0\bin;;C:\ProgramData\chocolatey\bin;C:\Users\91703\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\91703\AppData\Local\Programs\Python\Python313\;C:\Users\91703\AppData\Local\Programs\Python\Launcher\;C:\Users\91703\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;C:\Program Files\PostgreSQL\16\bin;C:\Users\91703\AppData\Roaming\npm;C:\Program Files\dotnet;C:\Users\91703\.dotnet\tools;C:\Users\91703\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\91703\AppData\Local\Programs\Python\Python312;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.1+11-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testTangent" classname="com.example.SimpleJavaAppTest" time="0.192">
+    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\91703\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.4\byte-buddy-agent-1.15.4.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="testKilogramsToPounds" classname="com.example.SimpleJavaAppTest" time="0.003"/>
+  <testcase name="testAreaOfRectangle" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testAreaOfCircle" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testHoursToDays" classname="com.example.SimpleJavaAppTest" time="0.002"/>
+  <testcase name="testLogBaseE" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testSum" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testFahrenheitToCelsius" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testMean" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testSine" classname="com.example.SimpleJavaAppTest" time="0.002"/>
+  <testcase name="testVolumeOfSphere" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testCelsiusToKelvin" classname="com.example.SimpleJavaAppTest" time="0.002"/>
+  <testcase name="testHoursToMinutes" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testAreaOfTriangle" classname="com.example.SimpleJavaAppTest" time="0.005"/>
+  <testcase name="testKilometersToMiles" classname="com.example.SimpleJavaAppTest" time="0.003"/>
+  <testcase name="testCelsiusToFahrenheit" classname="com.example.SimpleJavaAppTest" time="0.002"/>
+  <testcase name="testMphToKmph" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testVolumeOfCone" classname="com.example.SimpleJavaAppTest" time="0.002"/>
+  <testcase name="testLogarithmBase2" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testCentimetersToInches" classname="com.example.SimpleJavaAppTest" time="0.003"/>
+  <testcase name="testMinOfTwo" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testFactorial" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testVariance" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testCompoundInterest" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testMainMethod" classname="com.example.SimpleJavaAppTest" time="0.188"/>
+  <testcase name="testPowerModulo" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testCeilValue" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testNetPresentValue" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testToRadians" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testMinutesToHours" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testKelvinToCelsius" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testMonthlyLoanPayment" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testGetIntegerInput" classname="com.example.SimpleJavaAppTest" time="0.193"/>
+  <testcase name="testSimpleInterest" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testPerimeterOfRectangle" classname="com.example.SimpleJavaAppTest" time="0.005"/>
+  <testcase name="testToDegrees" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testRoundOff" classname="com.example.SimpleJavaAppTest" time="0.004"/>
+  <testcase name="testFutureValueOfInvestment" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testPoundsToKilograms" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testKmphToMph" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testMaxOfTwo" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testCosine" classname="com.example.SimpleJavaAppTest" time="0.002"/>
+  <testcase name="testDivide" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testStandardDeviation" classname="com.example.SimpleJavaAppTest" time="0.002"/>
+  <testcase name="testRandomInRange" classname="com.example.SimpleJavaAppTest" time="0.002"/>
+  <testcase name="testInchesToCentimeters" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testModulo" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testVolumeOfCylinder" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testDaysToHours" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testKilogramsToGrams" classname="com.example.SimpleJavaAppTest" time="0.001"/>
+  <testcase name="testMilesToKilometers" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testFloorValue" classname="com.example.SimpleJavaAppTest" time="0.003"/>
+  <testcase name="testPerimeterOfCircle" classname="com.example.SimpleJavaAppTest" time="0"/>
+  <testcase name="testMetersToKilometers" classname="com.example.SimpleJavaAppTest" time="0.002"/>
+  <testcase name="testSubtract(int, int)" classname="com.example.SimpleJavaAppTest" time="0.935"/>
+  <testcase name="testSqrt(int)" classname="com.example.SimpleJavaAppTest" time="0.4"/>
+  <testcase name="testAddition(int, int)" classname="com.example.SimpleJavaAppTest" time="0.424"/>
+  <testcase name="testCubeRoot(int)" classname="com.example.SimpleJavaAppTest" time="0.371"/>
+  <testcase name="testDivide(int, int)" classname="com.example.SimpleJavaAppTest" time="0.239"/>
+  <testcase name="testMultiply(int, int)" classname="com.example.SimpleJavaAppTest" time="0.239"/>
+  <testcase name="testModulo(int, int)" classname="com.example.SimpleJavaAppTest" time="0.221"/>
+  <testcase name="testExponentiate(int, int)" classname="com.example.SimpleJavaAppTest" time="0.278"/>
+</testsuite>
